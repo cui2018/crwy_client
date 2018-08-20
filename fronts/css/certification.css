@@ -1,0 +1,34 @@
+body{
+    background: #f3f3f3;
+}
+*{
+    margin:0;
+    padding:0;
+}
+.content{
+
+}
+.content ul li {
+    background: #ffffff;
+    list-style: none;
+    padding:0 2.66vw;
+    line-height:11.2vw;
+    height:11.2vw;
+    position: relative;
+}
+.content ul li p{
+    font-size: 4.26vw;
+    color: #333333;
+}
+.content ul li span{
+    position: absolute;
+    right:2.66vw;
+    top:0;
+    line-height: 11.2vw;
+}
+.content ul li:nth-of-type(1){
+    margin-bottom: 2.66vw;
+}
+.content ul li:nth-of-type(2){
+    border-bottom: 1px solid #d1d0d0;
+}

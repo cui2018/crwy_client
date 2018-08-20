@@ -1,0 +1,21 @@
+﻿@charset "utf-8";
+body {padding:0; font-size:12px; color:#333333;}
+.topbg {background:#0A0A0A url(../../images/admin/titbg.gif) repeat-y top/100% auto;}
+.title {color:#FFF; font-size:23px; font-weight:bold;}
+#ctrls {margin-right:20px;}
+#ctrls td {padding:0 3px;}
+#ctrls a {display:block; width:28px; height:28px; outline:none;}
+#ctrls a.backno {background:url(../../images/admin/back_no.png) no-repeat;}
+#ctrls a.back {background:url(../../images/admin/back.png) no-repeat;}
+#ctrls a.back:hover {background:url(../../images/admin/back_on.png) no-repeat;}
+#ctrls a.enterno {background:url(../../images/admin/enter_no.png) no-repeat;}
+#ctrls a.enter {background:url(../../images/admin/enter.png) no-repeat;}
+#ctrls a.enter:hover {background:url(../../images/admin/enter_on.png) no-repeat;}
+#ctrls a.refresh {background:url(../../images/admin/refresh.png) no-repeat;}
+#ctrls a.refresh:hover {background:url(../../images/admin/refresh_on.png) no-repeat;}
+#ctrls a.home {background:url(../../images/admin/home.png) no-repeat;}
+#ctrls a.home:hover {background:url(../../images/admin/home_on.png) no-repeat;}
+#ctrls a.logout {background:url(../../images/admin/logout.png) no-repeat;}
+#ctrls a.logout:hover {background:url(../../images/admin/logout_on.png) no-repeat;}
+#time {font-family:Arial, Helvetica, sans-serif;}
+.oh {overflow:hidden;}

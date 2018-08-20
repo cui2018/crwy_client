@@ -1,0 +1,6 @@
+﻿@charset "utf-8";
+/* 通用 */
+html,body {height:100%; background-color:#323166; overflow:hidden; -webkit-touch-callout:none; cursor:default;}
+body {font:4vw/5vw Microsoft YaHei; margin:0; padding:0; color:#333333;}
+a,button,input {outline:none;}
+ul,li {margin:0; padding:0; list-style:none;}

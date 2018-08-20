@@ -1,0 +1,170 @@
+body,html{overflow-x:hidden;}
+
+
+h4{
+    margin-left: 2.68vw;
+}
+.modal p{
+    text-align: center;
+}
+.btn{
+    width: 13.34vw;
+    height: 4.66vw;
+    border-radius: 0.66vw;
+    font-size: 0.68vw;
+    color: white;
+    background-color: cornflowerblue;
+}
+.btn:hover, .btn:focus{
+    background-color: #95b4ed;
+}
+.modal{
+    display: none;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    right:0;
+    bottom:0;
+    z-index: 1000;
+    background-color: rgba(0,0,0,0.6);
+}
+.modal-content{
+    position: absolute;
+    top:50%;
+    left:50%;
+    width: 75vw;
+    height:42vw;
+    border-radius: 0.53vw;
+    -webkit-animation: zoom 0.6s;
+    animation: zoom 0.6s;
+    resize: both;
+    overflow: hidden;
+    background: rgba(39, 39, 39, 0.8);
+    background: url(../img/safeimgpng.png) no-repeat;
+    background-size: cover;
+    margin-top:-21vw;
+    margin-left:-35.5vw;
+}
+@-webkit-keyframes zoom{
+    from {-webkit-transform: scale(0)}
+    to {-webkit-transform: scale(1)}
+}
+@keyframes zoom{
+    from {transform: scale(0)}
+    to {transform: scale(1)}
+}
+.modal-header{
+    box-sizing:border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2.66vw;
+    position: relative;
+    padding-top: 8vw;
+    line-height: 5.34vw;
+    color: #fff;
+}
+.modal-header h{
+    margin: auto;
+    font-size:4.6vw;
+    display: flex;
+}
+.modal-header h img{
+    vertical-align: middle;
+}
+#modal .close{
+    color: #b7b7b7;
+    font-size: 6.67vw;
+    font-weight: bold;
+    margin-right: 2.66vw;
+    transition: all 0.3s;
+    position: absolute;
+    right: 10px;
+    top: 20px;
+    background: transparent;
+}
+.close:hover, .close:focus{
+    color: #95b4ed;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-body{
+    padding: 1.33vw;
+    font-size: 14vw;
+    box-sizing:border-box;
+    color: #fff;
+    text-align: center;
+}
+.modal-body p{
+
+    font-size: 3.46vw;
+    line-height: 6.67vw;
+    padding: 0;
+    height: 6.67vw;
+}
+.modal-body input{
+    background: transparent;
+    border: none;
+    color: #fff;
+    opacity: 1;
+    text-align: center;
+}
+.modal-footer{
+    box-sizing:border-box;
+    display: flex;
+    padding: 2vw;
+    justify-content: flex-end;
+    align-items: center;
+}
+.modal-footer #cancel {
+    width: 14vw;
+    height: 5.3vw;
+    line-height: 5.3vw;
+    box-sizing: border-box;
+    font-size: 3vw;
+    border: none;
+    color: white;
+    margin: auto;
+    background: #4853CF;
+    border-radius: 0.5vw;
+    text-align: center;
+    box-shadow: 0 0.5vw 2.66vw #3b3b56;
+}
+
+.modal-footer button img{
+    width: 100%;
+}
+.modal-footer button:hover, .modal-footer button:focus{
+    cursor: pointer;
+}
+
+.timeid{
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.6);
+    display: none;
+}
+.timealert{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: 1000;
+    top: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+}
+.timealert img{
+    width: 100px;
+    height: 100px;
+}
+#title .icon-wenxin{
+    margin-right: 10px;
+    line-height: 5.34vw;
+    font-size: 7.34vw;
+    background: transparent;
+}

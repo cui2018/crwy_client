@@ -1,0 +1,28 @@
+body{
+	margin: 0;
+	padding: 0;
+}
+div{
+	padding: 0 2.66vw;
+}
+*{
+	margin: 0;
+	padding: 0;
+}
+h2{
+	font-size: 4.26vw;
+    color: #333333;
+    text-align: center;
+    line-height: 16vw;
+}
+h3{
+	font-size: 3.75vw;
+    color: #333333;
+    line-height: 11vw;
+}
+p{
+	font-size: 3.3vw;
+	line-height: 5vw;
+	text-indent: 2em;
+	
+}

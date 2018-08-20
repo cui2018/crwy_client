@@ -1,0 +1,473 @@
+html,body {
+    margin:0; padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:100%;
+    height:100%;
+    font-size:4vw;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    background:#EAEAEA;
+}
+ul,li,input {
+    padding:0;
+    margin:0;
+    border:0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+a,input,button{
+    -webkit-appearance:none;
+    border-radius: 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+/*设置侧边栏开始的位置在左侧*/
+#slide{
+    width:82.67vw;
+    background:#fff;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    z-index: 888;
+    transform: translateX(-89vw);
+    transition: all 0.3s linear;
+}
+#back{
+    width:6vw;
+    height:15.3vw;
+    background: #3A55D4;
+    position: absolute;
+    right:-6vw;
+    top:62vw;
+    font-size: 3.33vw;
+    text-align: center;
+    color:#fff;
+    border-radius: 0 1.5vw 1.5vw 0;
+    padding-bottom:1vw;
+}
+#refresh{
+    width:6vw;
+    height:15.3vw;
+    background: #fff;
+    position: absolute;
+    font-size: 3.33vw;
+    right:-6vw;
+    top:85vw;
+    text-align: center;
+    color:#455CF9;
+    border-radius: 0 1.5vw 1.5vw 0;
+    padding-bottom:1vw;
+}
+/*设置小圆点*/
+#circle{
+    width:50px;
+    height:50px;
+    border-radius: 25px;
+    background: url("../img/pull.png");
+    background-size: 50px 50px;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: 99;
+}
+/*遮罩层效果*/
+#cover{
+    background: rgba(0, 0, 0, .6);
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left:0;
+    right:0;
+    z-index: 666;
+    display: none;
+}
+.goback{
+    width:6vw;
+    height:6vw;
+    background-image: url("../img/to.png");
+    background-size:60% 60%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+.gorefresh{
+    width:6vw;
+    height:6vw;
+    background-image: url("../img/reresh.png");
+    background-size:60% 60%;
+    background-repeat: no-repeat;
+    background-position:center;
+}
+
+header{
+    height:10vh;
+    background: #fff;
+}
+header>div:nth-of-type(1){
+    height:10vh;
+    width:10vh;
+    margin-right:1.5vw;
+    position: relative;
+    float:left;
+}
+header>div:nth-of-type(2){
+    height:10vh;
+    position: relative;
+    float:left;
+}
+header>div:nth-of-type(1) img{
+    height:8vh;
+    width:8vh;
+    border-radius:50%;
+    position: absolute;
+    top:1vh;
+    left:1vh;
+}
+header>div:nth-of-type(2)>p:nth-of-type(1){
+    font-size: 3.73vw;
+    line-height:10vh;
+}
+header>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 2.13vw;
+    line-height:10vh;
+}
+
+nav {height:10vh; background-color:#fff; z-index:666; position: relative; width:100%;}
+nav ul {height:10vh; border-bottom:1px #CCC solid; border-top:1px #CCC solid; width:100%; box-sizing:border-box;}
+nav ul:after {content:""; display:block; clear:left;}
+nav ul li {float:left; width:27vw; height:100%; text-align:center; list-style:none; font-size:3vw; padding-top:1vh; box-sizing:border-box;}
+nav ul li.current {color:#3955D2; border-bottom:1px #3955D2 solid;}
+
+nav li>.navimg{
+    width:5vh;
+    height:5vh;
+    margin:0 auto;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-size:100% 100%;
+    transition:all 300ms ease-in-out;
+    -webkit-transition:all 300ms ease-in-out;
+}
+nav li:nth-of-type(1)>.navimg{
+    background-image:url(../img/game.png);
+}
+nav li:nth-of-type(2)>.navimg{
+    background-image:url(../img/gift.png);
+}
+nav li:nth-of-type(3)>.navimg{
+    background-image:url(../img/kefu.png);
+}
+nav li:nth-of-type(1).current>.navimg{
+    background-image:url(../img/game_choose.png);
+}
+nav li:nth-of-type(2).current>.navimg{
+    background-image:url(../img/gift_choose.png);
+}
+nav li:nth-of-type(3).current>.navimg{
+    background-image:url(../img/kefu_choose.png);
+}
+dl{
+    width:100%;
+    height:80vh;
+}
+dl dt{
+    display: none;
+    overflow: scroll;
+}
+dl dt:nth-of-type(1){
+    width:100%;
+    height:100%;
+}
+dl dt:nth-of-type(2){
+    width:100%;
+    height:100%;
+}
+dl dt:nth-of-type(3){
+    width:100%;
+    height:100%;
+    overflow-x: hidden;
+}
+#hot{
+    text-align: center;
+    line-height: 8vw;
+    border-bottom: 2px solid #EAEAEA;
+}
+
+#gameL{
+    width:100%;
+    overflow-y: auto;
+}
+#gameL li{
+    list-style: none;
+    height: 18vw;
+    border-bottom:2px solid #EAEAEA;
+    position:relative;
+    background:#fff;
+}
+#gameL li>a>div:nth-of-type(1){
+    width:18.67vw;
+    height: 18vw;
+    position: relative;
+    float: left;
+}
+#gameL li>a>div:nth-of-type(1)>img{
+    width:13.3vw;
+    height:13.3vw;
+    position:absolute;
+    top:2.5vw;
+    left:2.5vw;
+}
+#gameL li>a>div:nth-of-type(2){
+    width:47vw;
+    height: 18vw;
+    position: relative;
+    float:left;
+}
+#gameL li>a>div:nth-of-type(2)>p:nth-of-type(1){
+    font-size: 4vw;
+    line-height:11vw;
+
+}
+#gameL li>a>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 3vw;
+    width:47vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+#gameL li>div{
+    box-sizing: border-box;
+    position:absolute;
+    width:13.8vw;
+    height:7.2vw;
+    line-height: 7.2vw;
+    right:2.67vw;
+    border:1px solid #4853CF;
+    box-sizing: border-box;
+    text-align: center;
+    top:5.3vw;
+    border-radius: 1vw;
+    font-size:3.1vw;
+    font-weight: bold;
+
+}
+#gameL li>div>a{
+    display: block;
+    color:#4853CF;
+}
+
+#gameList{
+    width:100%;
+    height:100%;
+}
+#gameList li{
+    width:100%;
+    height: 20vw;
+    border-bottom:2px solid #EAEAEA;
+    position:relative;
+    padding-left: 4vw;
+    box-sizing:border-box;
+}
+
+#gameList li>div:nth-of-type(1){
+    width:50vw;
+    height: 20vw;
+    position:relative;
+}
+
+#gameList li>div:nth-of-type(1)>p:nth-of-type(1){
+    font-size: 4vw;
+    line-height:8vw;
+}
+#gameList li>div:nth-of-type(1)>p:nth-of-type(2){
+    font-size: 3vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    color:#636363;
+}
+#gameList .gamegift>div:nth-of-type(2){
+    position:absolute;
+    width:13.8vw;
+    height:7.2vw;
+    line-height: 7.2vw;
+    right:6vw;
+    text-align: center;
+    top:6vw;
+    border-radius: 1vw;
+    font-size:3.1vw;
+    background:#4853CF;
+}
+#gameList .gamegift>div:nth-of-type(2)>a{
+    color:#FFF;
+    display: block;
+    width:13.8vw;
+    height:7.2vw;
+}
+
+.gamegift>div:nth-of-type(1)>div{
+    margin-top:4vw;
+    width:65vw;
+}
+.gamegift>div:nth-of-type(1)>div>div:nth-of-type(1){
+    width:45vw;
+    height:1.3vw;
+    border-radius: 0.66vw;
+    background:#DDDDDF;
+    float:left;
+}
+.gamegift>div:nth-of-type(1)>div>div:nth-of-type(2){
+    float:left;
+    font-size:2.67vw;
+    color:#FE4604;
+    margin-left:2vw;
+    margin-top:-1vw;
+}
+.gamegift>div:nth-of-type(1)>div>div:nth-of-type(2)>span:nth-of-type(2){
+    color:#333;
+}
+.clearfix{
+    clear:both;
+}
+.gamegift>div:nth-of-type(1)>div>div:nth-of-type(1)>div{
+    height:1.3vw;
+    background:#FFA400;
+    border-radius: 0.66vw 0 0 0.66vw;
+    width:22vw;
+}
+
+
+/*礼包领取效果*/
+#shade{
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,.7);
+    position:fixed;
+    bottom:0;
+    z-index:9999;
+    display: none;
+}
+#shade>div{
+    width:70vw;
+    height:96vw;
+    background:#fff;
+    position:absolute;
+    top:50%;
+    left:50%;
+    border-radius: 3vw;
+    transform: translate(-35%, -50%);
+}
+#shade>div>header{
+    width:100%;
+    height:26vw;
+    border-radius: 3vw 3vw 0 0;
+}
+#shade>div>header>img{
+    display: block;
+    margin:0 auto;
+    width:42.6vw;
+    height:22vw;
+    margin-top:7vw;
+
+}
+#shade>div>p:nth-of-type(1){
+    font-size: 3.6vw;
+    text-align: center;
+    color:#000;
+}
+#shade>div>p:nth-of-type(2){
+    padding:0 5vw 0 5vw;
+    font-size: 3.6vw;
+    color:#FF0000;
+    margin-top:4.5vw;
+}
+#shade>div>p:nth-of-type(3){
+    padding:0 5vw 0 5vw;
+    font-size: 3.2vw;
+    color:#000;
+    line-height: 11.3vw;
+}
+
+#shade>div>p:nth-of-type(4){
+    border: 1px solid #4853CF;
+    width: 60vw;
+    margin: 0 auto;
+    padding:1vw;
+    word-break: break-all;
+    box-sizing: border-box;
+}
+
+
+#shade>div>p:nth-of-type(5){
+    font-size: 3.2vw;
+    color:#000;
+    text-align: center;
+    line-height: 13vw;
+}
+/*弹框开始游戏*/
+#shade>div>a{
+    display: block;
+    height:10vw;
+    width:100%;
+    background:#4853CF;
+    border-radius: 0 0 3vw 3vw ;
+    position:absolute;
+    bottom:0;
+    text-decoration: none;
+    color:#fff;
+    line-height: 10vw;
+    text-align: center;
+    font-size: 3.5vw;
+}
+#shade>div>span{
+    width:6vw;
+    height:6vw;
+    border-radius: 3vw;
+    background:#4853CF;
+    position: absolute;
+    top:2vw;
+    right:2vw;
+    text-align: center;
+    color:#fff;
+    line-height:5.75vw;
+}
+
+dl dt:nth-of-type(3){
+    padding-left: 4vw;
+}
+dl dt:nth-of-type(3)>p:nth-of-type(1){
+    line-height: 9vw;
+    font-size:3.33vw;
+}
+dl dt:nth-of-type(3)>p:nth-of-type(2){
+    line-height: 9vw;
+    font-size:3.33vw;
+}
+dl dt:nth-of-type(3)>p:nth-of-type(3){
+    line-height: 9vw;
+    font-size:3.33vw;
+}
+dl dt:nth-of-type(3)>p:nth-of-type(4){
+    width:77vw;
+    height:70vw;
+    text-align: center;
+    margin-top:5vw;
+
+}
+dl dt:nth-of-type(3)>p:nth-of-type(4) img{
+    width:50vw;
+    position: relative;
+    left:-2vw;
+}
+dl dt:nth-of-type(3)>p:nth-of-type(5){
+    width:77vw;
+    text-align: center;
+    line-height: 9vw;
+    margin-top:1vw;
+}
+

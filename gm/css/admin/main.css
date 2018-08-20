@@ -1,0 +1,6 @@
+﻿@charset "utf-8";
+html,body {height:100%;}
+body {padding:0;}
+#admin_main {width:402px; height:238px; background:url(../../images/admin/main_bg.jpg) no-repeat; -moz-box-shadow:4px 2px 6px #999999; -webkit-box-shadow:4px 2px 6px #999999;}
+#admin_main h1 {height:70px; padding-top:50px; margin:0 20px; line-height:70px; font-size:28px; font-weight:normal; text-align:center; border-bottom:1px #CCCCCC solid; color:#FF6600; font-family:"微软雅黑"; text-shadow:2px 2px 6px #666666;}
+#admin_main h5 {height:20px; line-height:20px; font-size:15px; font-weight:normal; text-align:center; color:#727C8F; font-family:Microsoft YaHei;}

@@ -1,0 +1,594 @@
+html,body {
+    margin:0; padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    font-size:4vw;
+    color:#333;
+    width: 100%;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+ul,li,input {
+    padding:0;
+    margin:0;
+    border:0;
+}
+*{
+    margin:0;
+}
+a,input,button{
+    -webkit-appearance:none;
+    border-radius: 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+a{
+    text-decoration: none;
+}
+ul,li,dl,dt,dd {margin:0; padding:0; list-style:none;}
+
+.stop {
+    height:100vh;
+    overflow:hidden;
+}
+#alert{
+    width:74.6vw;
+    height:42.67vw;
+    background-image: url("../img/person.png");
+    background-repeat: no-repeat;
+    background-size: 74.6vw 42.67vw;
+    position: fixed;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border-radius: 0.6vw;
+    z-index: 999;
+    display: none;
+}
+#alert>p:nth-of-type(1){
+    padding-top: 9.6vw;
+    font-size: 3.3vw;
+    text-align: center;
+    color: #fff;
+}
+#alert>p:nth-of-type(2){
+    padding-top: 2.5vw;
+    font-size: 3.3vw;
+    text-align: center;
+    color: #fff;
+}
+#alert>div>div:nth-of-type(1){
+    width:14vw;
+    height: 5.4vw;
+    background: #455CF9;
+    color: #fff;
+    font-size: 2.67vw;
+    border-radius: 1.1vw;
+    text-align: center;
+    line-height: 5.4vw;
+    float: left;
+}
+#alert>div>div:nth-of-type(2){
+    width:14vw;
+    height: 5.4vw;
+    border:1px solid #455CF9;
+    font-size: 2.67vw;
+    border-radius: 1.1vw;
+    text-align: center;
+    line-height: 5.4vw;
+    color:#fff;
+    box-sizing: border-box;
+    float: right;
+}
+#alert>div{
+    padding:7vw 10vw 0 10vw;
+}
+#alert>div:after{
+    content:"";
+    display:block;
+    height:0;
+    clear:both;
+
+}
+#alert>span{
+    position: absolute;
+    color:#000;
+    top:1vw;
+    right:3.5vw;
+    font-size:6.67vw;
+    font-weight: bold;
+}
+
+#shadeperson{
+    display: none;
+    width:100%;
+    height:100%;
+    position: fixed;
+    top:0;
+    z-index:998;
+    background: rgba(0, 0, 0, 0.8);
+}
+
+
+
+
+
+#header {
+    position:fixed;
+    z-index: 996;
+    top:0; left:0;
+    width:100%;
+    height:8vw;
+    background-color:#fff;
+    text-align:center;
+    font-size: 3.3vw;
+    padding-top:1.33vw;
+}
+#header>div{
+    border:0;
+    width:86.6vw;
+    height: 6.67vw;
+    line-height: 7.67vw;
+    margin:0 auto;
+    background:#E2E3E7;
+    border-radius: 3.3vw;
+    padding-left:8vw;
+    text-align: left;
+}
+#header img{
+    width: 5.3vw;
+    height: 5.3vw;
+    position: absolute;
+    left: 5vw;
+    top:2vw;
+}
+
+article {margin:0vw auto 13vw auto;}
+/*banner效果*/
+.swiper-container {
+    margin-top: 9.5vw;
+    width: 100%;
+    height: 40vw;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+
+}
+.swiper-slide a{
+    display: block;
+    height: 40vw;
+    width: 100%;
+}
+.swiper-slide a img{
+    display: block;
+    width: 100%;
+    height: 40vw;
+}
+/*跑马灯效果*/
+#news {
+    background-image: url("../img/bar.png");
+    background-repeat: no-repeat;
+    background-size: 3.6vw 3.6vw;
+    background-position: 3vw 2vw;
+    height: 7.33vw;
+    overflow-y:hidden;
+
+}
+#news li{
+    line-height: 7.33vw;
+}
+#news li a{
+    display: inline-block;
+    font-size:3vw;
+}
+#news li a span:nth-of-type(1){
+    color:#F95612;
+    padding-right:1vw;
+}
+
+
+/* 最近在玩 */
+#recently{
+    width: 100%;
+    height: 28vw;
+    background: #fff;
+    border-bottom: 0px solid #EAEAEA;
+    border-top:5px solid #EAEAEA;
+}
+#recently>p{
+    position: relative;
+    height: 9.3vw;
+    font-size: 4vw;
+    line-height: 9.3vw;
+}
+#recently>p>span:nth-of-type(1){
+    position: absolute;
+    left: 2.6vw;
+
+}
+#recently>p>span:nth-of-type(2){
+    position: absolute;
+    right: 2.6vw;
+}
+#recently>p>span:nth-of-type(2)>a{
+    color:#3955D2;
+}
+
+
+
+
+#recentlyplay{
+    width:100%;
+    height:18.7vw;
+}
+#recentlyplay>div{
+    width:20%;
+    float: left;
+    height:18.7vw;
+}
+#recentlyplay:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+
+
+#recentlyplay>div>a{
+    display: block;
+    font-size: 3vw;
+    text-align: center;
+    color:#000000;
+
+}
+#recentlyplay>div>a img{
+    display: block;
+    width: 10.6vw;
+    height: 10.6vw;
+    margin:0 auto;
+}
+#recentlyplay>div>a span{
+    line-height: 8.6vw;
+}
+
+
+
+nav {background-color:#fff; z-index:666;position: relative;width:100%;}
+nav ul {height:12vw; border-bottom:1px #CCC solid; border-top:1px #CCC solid;width:100%;}
+nav ul:after {content:""; display:block; clear:left;}
+nav ul li {float:left; width:25vw; height:12vw; text-align:center; line-height:12vw;}
+nav ul li.current {color:#3955D2; border-bottom:1px #3955D2 solid; box-sizing:border-box;}
+nav.fixed {position:fixed; top:9vw; left:0; right:0;}
+nav.fixed + dl {margin-top:12vw;}
+
+#gameList{
+    position:relative;
+}
+#gameList a{
+    color:#000000;
+    height:18vw;
+}
+#gameList li{
+    width:100%;
+    height: 18vw;
+    border-bottom:2px solid #EAEAEA;
+    position:relative;
+}
+/*第一个li下，第一个左边div为图片样式*/
+#gameList li>a{
+    display:block;
+}
+#gameList li>a>div:nth-of-type(1){
+    width:18.67vw;
+    height: 18vw;
+    float:left;
+    position:relative;
+}
+#gameList li>a>div:nth-of-type(1) img{
+    width:13.3vw;
+    height:13.3vw;
+    position:absolute;
+    top:2.5vw;
+    left:2.5vw;
+}
+/*第一个li下，第二个右边div为文字样式*/
+#gameList li>a>div:nth-of-type(2){
+    width:81vw;
+    height:18vw;
+    float:left;
+}
+#gameList li>a>div:nth-of-type(2)>p:nth-of-type(1){
+    font-size: 4vw;
+    line-height:11vw;
+}
+#gameList li>a>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 3vw;
+}
+#gameList li>div{
+    position:absolute;
+    box-sizing:border-box;
+    width:13.8vw;
+    height:7.2vw;
+    line-height: 7.2vw;
+    right:2.67vw;
+    /*border:1px solid #9A9A9A;*/
+    border:1px solid #4853CF;
+    text-align: center;
+    top:5.3vw;
+    border-radius: 1vw;
+    font-size:3.1vw;
+    font-weight: bold;
+}
+#gameList li>div>a{
+    display: block;
+    color:#4853CF;
+}
+
+#gameL li>a>div:nth-of-type(2)>p:nth-of-type(2){
+    width:60vw;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+
+
+
+/*游戏类别*/
+#gameClass{
+    position:relative;
+    width:94.6vw;
+    height:55vw;
+    margin:2.67vw auto 0 auto;
+}
+#gameClass li{
+    width: 45.8vw;
+    height:24.8vw;
+    position:absolute;
+}
+#gameClass li a{
+    display:block;
+}
+#gameClass li img{
+    width: 45.8vw;
+    height:24.8vw;
+}
+#gameClass li:nth-of-type(1){
+    top:0;
+    left:0;
+    border-radius: 2vw;
+}
+#gameClass li:nth-of-type(2){
+    top:0;
+    right:0;
+    border-radius: 2vw;
+}
+#gameClass li:nth-of-type(3){
+    bottom:2.67vw;
+    left:0;
+    border-radius: 2vw;
+}
+#gameClass li:nth-of-type(4){
+    right:0;
+    bottom:2.67vw;
+    border-radius: 2vw;
+}
+/*新游列表*/
+#gameNew{
+    position:relative;
+}
+#gameNew a{
+    color:#000000;
+}
+#gameNew li>a{
+    display:block;
+    color:#333;
+}
+#gameNew li{
+    width:100%;
+    height: 18vw;
+    border-bottom:2px solid #EAEAEA;
+    position:relative;
+}
+/*第一个li下，第一个左边div为图片样式*/
+#gameNew li>a>div:nth-of-type(1){
+    width:18.67vw;
+    height: 18vw;
+    float:left;
+    position:relative;
+}
+#gameNew li>a>div:nth-of-type(1) img{
+    width:13.3vw;
+    height:13.3vw;
+    position:absolute;
+    top:2.5vw;
+    left:2.5vw;
+}
+/*第一个li下，第二个右边div为文字样式*/
+#gameNew li>a>div:nth-of-type(2){
+    width:81vw;
+    height:18vw;
+    float:left;
+}
+#gameNew li>a>div:nth-of-type(2)>p:nth-of-type(1){
+    font-size: 4vw;
+    line-height:11vw;
+}
+#gameNew li>a>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 3vw;
+}
+#gameNew li>div{
+    position:absolute;
+    width:13.8vw;
+    height:7.2vw;
+    line-height: 7.2vw;
+    box-sizing: border-box;
+    right:2.67vw;
+    border:1px solid #4853CF;
+    text-align: center;
+    top:5.3vw;
+    border-radius: 1vw;
+    font-size:3.1vw;
+    font-weight: bold;
+}
+#gameNew li>div>a{
+    display: block;
+    color:#4853CF;
+}
+
+#gameN li>a>div:nth-of-type(2)>p:nth-of-type(2){
+    width:60vw;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+
+/*游戏资讯*/
+#gameI li a:after{
+    content:".";
+    display:block;
+    height:0;
+    clear:both;
+    visibility:hidden;
+}
+
+#gameI li a div:nth-of-type(2){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width:66vw;
+}
+
+#gameInfo{
+    position:relative;
+}
+/*li下左边div样式*/
+#gameInfo li{
+    height:12.2vw;
+    border-bottom:2px solid #EAEAEA;
+    padding:0 2.67vw;
+}
+#gameInfo li>a{
+    display: block;
+    color:#333;
+}
+#gameInfo li div:nth-of-type(1){
+    float:left;
+    width:10vw;
+    height:5.8vw;
+    font-size:3.73vw;
+    border:1px solid #FF0000;
+    text-align: center;
+    line-height:6vw;
+    color:#FF0000;
+    margin-top:2.9vw;
+}
+
+
+#gameInfo li div:nth-of-type(2){
+    float:left;
+    font-size:3.73vw;
+    line-height: 12.2vw;
+    margin-left:2.67vw;
+}
+
+#gameInfo li div:nth-of-type(2)>span{
+    color:#FFA400;
+    font-size:3.73vw;
+    line-height: 12.2vw;
+}
+#gameInfo li div:nth-of-type(3){
+    float:right;
+    font-size:3.73vw;
+    line-height: 12.2vw;
+}
+
+dl dt {display:none;}
+/*dl dt:nth-of-type(1) { border-bottom:2px solid red;}
+dl dt:nth-of-type(2) { border-bottom:2px solid green;}
+dl dt:nth-of-type(3) { border-bottom:2px solid yellow;}
+dl dt:nth-of-type(4) { border-bottom:2px solid pink;}*/
+/*
+footer {position:fixed; bottom:0; left:0; right:0; height:15vw; background-color:#E9E; text-align:center; line-height:15vw;}*/
+#nav{
+    position:fixed;
+    bottom:0;
+    left:0;
+    right:0;
+    display: -webkit-box;
+    display: flex;
+    height:13vw;
+    background-color: #FFFFFF;
+    box-shadow: 0 -2px 6px 1px #D5D5D5;
+}
+#nav div{
+    -webkit-box-flex:1;
+    padding:1.6vw 0 0.2vw 0;
+    flex-grow:1;
+    width:0;
+}
+#nav div >a{
+    display: block;
+    text-align: center;
+    font-size: 2.67vw;
+}
+#nav div:nth-of-type(1)>a{
+    color:#6270F5;
+}
+#nav div:nth-of-type(2)>a{
+    color:#CCCCCC;
+}
+#nav div:nth-of-type(3)>a{
+    color:#CCCCCC;
+}
+#nav div>a:before{
+    content:"";
+    display:block;
+    width:6.67vw;
+    height:6.67vw;
+    background-size: 6.67vw;
+    margin:0 auto;
+
+}
+#nav div:nth-of-type(1) a:before {
+    background-image: url(../img/game_nav_choose.png);
+    background-repeat: no-repeat;
+}
+
+#nav div:nth-of-type(2) a:before {
+    background-image: url(../img/gamegift_nav.png);
+    background-repeat: no-repeat;
+}
+
+#nav div:nth-of-type(3) a:before {
+    background-image: url(../img/personal_nav.png);
+    background-repeat: no-repeat;
+}
+/*到达底部的样式*/
+.bottomTitle{
+    width:100%;
+    height:9vw !important;
+    text-align: center;
+    line-height: 9.5vw;
+    background:#EAEAEA;
+    font-size: 3vw;
+}
+.code{
+    height:33vw !important;
+    text-align:center;
+}
+.code>img{
+    width:30vw;
+    height:30vw;
+}
+
+#span{
+    position: relative;
+    top:-0.4vw;
+}

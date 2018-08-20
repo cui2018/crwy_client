@@ -1,0 +1,197 @@
+html,body {
+    margin:0; padding:0;
+    overflow-x:hidden;
+    overflow-y:auto;
+    width:100%;
+    font-size:4vw;
+    font-family:Microsoft YaHei;
+    color:#333;
+    -webkit-user-select:none;
+    -webkit-text-size-adjust:none;
+    font-family:helvetica;}
+ul,li,input {
+    padding:0;
+    margin:0;
+    border:0;
+}
+*{
+    margin:0;
+    padding:0;
+}
+a,input,button{
+    -webkit-appearance:none;
+    border-radius: 0;
+    -webkit-tap-highlight-color:rgba(0, 0, 0, 0);
+}
+a{
+    text-decoration: none;
+    color:#333;
+}
+
+ul,li,dl,dt,dd {margin:0; padding:0; list-style:none;}
+
+#header {
+    position:fixed;
+    top:0vw; left:0;bottom:4vw;
+    width:100%;
+    height:8vw;
+    background-color:#fff;
+    font-size: 3.3vw;
+    z-index:999;
+    padding: 1vw 0 1vw 0;
+}
+#header>input:nth-of-type(1){
+    border:0;
+    width:75vw;
+    height: 6.67vw;
+    line-height: 6.67vw;
+    background:#F3F3F3;
+    border-radius: 3.3vw;
+    outline: none;
+    padding-left:8vw;
+    padding-top:0.8vw;
+    margin-left:2.67vw;
+}
+
+
+
+
+#cancel{
+    margin-top:1.5vw;
+    margin-left:2vw;
+    outline: none;
+    font-size:3.7vw;
+    background:#fff;
+    padding:1vw 1.7vw 1vw 0;
+}
+#header img{
+    width: 5.3vw;
+    height: 5.3vw;
+    position: absolute;
+    left: 5vw;
+    margin-top: 2.5vw;
+}
+
+/*最近在玩标志*/
+#rencently{
+    font-size: 4vw;
+    line-height:12vw;
+    height:12vw;
+    color:#000000;
+    font-weight: bold;
+    margin-top:15vw;
+    padding-left:2.67vw;
+}
+/*最近玩过游戏*/
+#recentlyPlay{
+    width:100vw;
+    padding: 0 2.67vw 0 2.67vw;
+}
+.clearfix{
+    clear:both;
+}
+#recentlyPlay li{
+    float:left;
+    padding:1vw 2vw;
+    margin:1vw 2.67vw;
+    background:#F3F3F3;
+    text-align: center;
+    font-sieze:3.3vw;
+}
+#hotly{
+    width:100vw;
+    font-size: 4vw;
+    line-height:12vw;
+    height:12vw;
+    color:#000000;
+    font-weight: bold;
+    padding-left:2.67vw;
+}
+/*热门游戏*/
+#hotPlay{
+    padding: 0 2.67vw 0 2.67vw;
+   /* background:rgba(0,0,0,0.5);*/
+}
+.clearfix{
+    clear:both;
+}
+#hotPlay li{
+    float:left;
+    padding:1vw 2vw;
+    margin:1vw 2.67vw;
+    background:#F3F3F3;
+    text-align: center;
+    font-sieze:3.3vw;
+}
+
+
+/*游戏列表样式*/
+#gameList{
+    margin-top:12vw;
+    position:relative;
+}
+#gameList li{
+    width:100%;
+    height: 18vw;
+    border-bottom:2px solid #EAEAEA;
+    position:relative;
+}
+/*第一个li下，第一个左边div为图片样式*/
+#gameList li>div:nth-of-type(1){
+    width:18.67vw;
+    height: 18vw;
+    float:left;
+    position:relative;
+}
+#gameList li>div:nth-of-type(1) img{
+    width:13.3vw;
+    height:13.3vw;
+    position:absolute;
+    top:2.5vw;
+    left:2.5vw;
+}
+/*第一个li下，第二个右边div为文字样式*/
+#gameList li>div:nth-of-type(2){
+    width:81vw;
+    height:18vw;
+    float:left;
+}
+#gameList li>div:nth-of-type(2)>p:nth-of-type(1){
+    font-size: 4vw;
+    line-height:11vw;
+}
+#gameList li>div:nth-of-type(2)>p:nth-of-type(2){
+    font-size: 3vw;
+}
+#gameList li>div:nth-of-type(3){
+    position:absolute;
+    width:13.8vw;
+    height:7.2vw;
+    line-height: 7.2vw;
+    right:2.67vw;
+    border: 1px solid #4853CF;
+    text-align: center;
+    top:5.3vw;
+    border-radius: 1vw;
+    font-size:3.1vw;
+    font-weight: bold;
+    box-sizing: border-box;
+
+}
+#gameList li>div:nth-of-type(3)>a{
+    display: block;
+    color: #4853CF;
+}
+#nonesearch{
+    width:35vw;
+    height:35vw;
+    display: none;
+}
+
+#gameL li>div:nth-of-type(2)>p:nth-of-type(2){
+    width:60vw;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+

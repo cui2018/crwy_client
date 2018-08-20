@@ -1,0 +1,9 @@
+RewriteEngine on
+RewriteCond $1 !^(index\.php|images|js|upload|editor|robots\.txt|k\/err|favicon\.ico)
+RewriteRule ^(.*)$ /index.php?uri=/$1 [L]
+
+<FilesMatch "\.(do)$">
+  <IfModule mod_headers.c>
+    Header set Access-Control-Allow-Origin "http://www.edisonluorui.com"
+  </IfModule>
+</FilesMatch>
